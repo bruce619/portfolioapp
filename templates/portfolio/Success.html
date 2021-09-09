@@ -1,0 +1,40 @@
+{% extends 'portfolio/index.html' %}
+{% load static %}
+{% block title %} Success {% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/success.css' %}" media="screen">
+{% endblock %}
+
+{% block content %}
+{% include "portfolio/headertwo.html" %}
+
+<section class="u-clearfix u-section-1" id="sec-6f54">
+  <div class="u-clearfix u-sheet u-sheet-1">
+    <div class="u-clearfix u-expanded-width u-gutter-0 u-layout-wrap u-layout-wrap-1">
+      <div class="u-layout" style="">
+        <div class="u-layout-row" style="">
+          <div class="u-align-center u-container-style u-grey-80 u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-layout-cell-1" src="">
+            <div class="u-container-layout u-container-layout-1">
+              <span class="u-icon u-icon-circle u-palette-1-base u-spacing-10 u-icon-1">
+                <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-6586"></use>
+                </svg>
+                <svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-6586" style="enable-background:new 0 0 512 512;">
+                  <ellipse style="fill:currentColor;" cx="256" cy="256" rx="256" ry="255.832"></ellipse>
+                  <polygon style="fill:#FFFFFF;" points="235.472,392.08 114.432,297.784 148.848,253.616 223.176,311.52 345.848,134.504   391.88,166.392 "></polygon>
+                </svg>
+              </span>
+              <h2 class="u-text u-text-1">Message Sent</h2>
+              <p class="u-text u-text-2">Thank you for contacting me. I will get back to you as soon as possible. Cheers!!!</p>
+              <a href="/" class="u-active-none u-border-2 u-border-palette-1-base u-btn u-btn-rectangle u-button-style u-hover-none u-none u-btn-1">Go Back</a>
+            </div>
+          </div>
+          <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="1280" data-image-height="640">
+            <div class="u-container-layout u-valign-middle u-container-layout-2" src=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

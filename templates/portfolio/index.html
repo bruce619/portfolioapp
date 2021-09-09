@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" style="font-size: 16px;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author"  content="Chimuanya Bruce Ibecheozor">
+        <meta name="keywords" content="Chimuanya Bruce Ibecheozor, Portfolio, Website">
+        <meta name="description" content="Chimuanya Bruce Ibecheozor portfolio website">
+        <meta name="page_type" content="np-template-header-footer-from-plugin">
+        <meta name="theme-color" content="#478ac9">
+        <meta property="og:title" content="Chimuanya Bruce Ibecheozor">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="CHIMUANYA BRUCE IBECHEOZOR"/>
+        <meta property="og:url" content="https://www.chimuanyaibe.herokuapp.com"/>
+        <meta property="og:description" content="Chimuanya Bruce Ibecheozor portfolio website."/>
+        <meta name="generator" content="Nicepage 3.23.2, nicepage.com">
+        <title>{% block title %} {% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/nicepage.css' %}" media="screen">
+        <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}">
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+        <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|PT+Sans:400,400i,700,700i">
+        {% block styles %}{% endblock %}
+        <script class="u-script" type="text/javascript" src="{% static 'js/jquery.js' %}" defer=""></script>
+        <script class="u-script" type="text/javascript" src="{% static 'js/nicepage.js' %}" defer=""></script>
+        <script type="application/ld+json">{
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "name": "",
+            "logo": "{% static 'img/resize-162915525978032930techwiz.png' %}"
+            }
+        </script>
+    </head>
+    <body class="u-body">
+        {% block content %}
+
+        {% endblock %}
+        <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-07fd">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <p class="u-small-text u-text u-text-variant u-text-1"> ©2021 Chimuanya Bruce Ibecheozor</p>
+            </div>
+        </footer>
+    </body>
+</html>
