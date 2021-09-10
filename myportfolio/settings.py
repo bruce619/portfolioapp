@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '^fa5d2bb!mwupoe!5)k$gqxe)ktcoraj2u#2cybby9qjw$pc6r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', cast=bool)
+# DEBUG = config('DEBUG', cast=bool)
+DEBUG = False
 
 ALLOWED_HOSTS = ['chimaibeportfolio.herokuapp.com', '127.0.0.1']
 
