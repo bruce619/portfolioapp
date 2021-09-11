@@ -82,10 +82,13 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'dpcjbuq9thap9',
+        'HOST': 'ec2-44-195-16-34.compute-1.amazonaws.com',
+        'POST': 5432,
+        'USER': 'pgwhbzihtsptqh',
+        'PASSWORD': '73baa800023a40922495c0755d458946d793fc9ac8cd026b6b53b360e9002c9a'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -130,13 +133,9 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
-# EMAIL_PORT = config('EMAIL_PORT', cast=int)
-EMAIL_PORT = 587
-# EMAIL_HOST_USER = config("EMAIL_HOST_USER")
-EMAIL_HOST_USER = 'petrobruz@gmail.com'
-# EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
-EMAIL_HOST_PASSWORD = 'kwrhahaonjqpawst'
+EMAIL_PORT = config('EMAIL_PORT', cast=int)
+EMAIL_HOST_USER = config("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD")
 SERVER_EMAIL = EMAIL_HOST_USER
 DEFAULT_FROM_EMAIL = "Portfolio <{}>".format(EMAIL_HOST_USER)
-# DEFAULT_TO_EMAIL = config('DEFAULT_TO_EMAIL')
-DEFAULT_TO_EMAIL = 'chimuanyaibecheozor@gmail.com'
+DEFAULT_TO_EMAIL = config('DEFAULT_TO_EMAIL')
