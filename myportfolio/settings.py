@@ -21,12 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = config('SECRET_KEY')
-SECRET_KEY = '^fa5d2bb!mwupoe!5)k$gqxe)ktcoraj2u#2cybby9qjw$pc6r'
+SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = config('DEBUG', cast=bool)
-DEBUG = False
+DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = ['chimaibeportfolio.herokuapp.com', '127.0.0.1']
 
@@ -82,11 +80,11 @@ WSGI_APPLICATION = 'myportfolio.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dpcjbuq9thap9',
-        'HOST': 'ec2-44-195-16-34.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'pgwhbzihtsptqh',
-        'PASSWORD': '73baa800023a40922495c0755d458946d793fc9ac8cd026b6b53b360e9002c9a'
+        'NAME': config('DB_NAME'),
+        'HOST': config('DB_HOST'),
+        'PORT': config('DB_PORT', cast=int),
+        'USER': config('DB_USER'),
+        'PASSWORD': config('DB_PASSWORD')
     }
 }
 
