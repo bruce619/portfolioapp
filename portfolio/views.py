@@ -36,3 +36,5 @@ def home(request):
 
 def success_view(request):
     return render(request, "portfolio/Success.html", {})
+
+
